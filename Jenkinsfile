@@ -9,7 +9,7 @@ pipeline{
       }
     stage('deploy'){
       steps{
-        ch 'cp -r * /var/www/html'
+        sh 'cp -r * /var/www/html'
       }
     }
     }
